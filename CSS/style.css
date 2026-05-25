@@ -1,0 +1,271 @@
+:root {
+    --main-font: "Open Sans";
+    --header: "Dancing Script";
+    --main-color: #ffbe33;
+    --bg-color: #222831;
+}
+
+#navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px black;
+
+    .nav-item a,
+    .navbar-brand {
+        color: black;
+    }
+
+    .navbar-brand:hover {
+        color: black !important;
+    }
+
+    form i {
+        color: var(--main-color);
+    }
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+.navbar-brand,
+h2,
+footer h4 {
+    font-family: var(--header);
+}
+
+#navbar .nav-link,
+.navbar-brand {
+    color: white;
+}
+
+#navbar .nav-item .active,
+#navbar .nav-link:hover,
+footer .links a:hover {
+    color: var(--main-color) !important;
+}
+
+.navbar-nav,
+.offers .card button {
+    font-family: var(--main-font);
+}
+
+form .btn,
+.carousel-caption button,
+#menu button,
+#about button,
+#bookAtable .row form button {
+    background-color: var(--main-color);
+}
+
+form .btn:hover,
+.carousel-caption button:hover,
+#menu button:hover,
+#about button:hover,
+#bookAtable .row form button:hover {
+    background-color: #E69C00;
+}
+
+form a i {
+    color: white;
+    font-size: 20px;
+}
+
+form a i:hover {
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+#home {
+    height: 100vh;
+    background-image: url(../Images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel {
+    position: static;
+}
+
+.carousel-caption {
+    position: static;
+    padding: 1rem;
+}
+
+.carousel-indicators {
+    position: static;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 12px;
+    width: 12px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--main-color);
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+}
+
+.carousel-caption p {
+    font-size: 14px;
+    font-family: var(--main-font);
+}
+
+.offers .card {
+    font-family: var(--header);
+    background-color: var(--bg-color);
+}
+
+.offers .card .image {
+    border: 5px solid var(--main-color);
+    overflow: hidden;
+}
+
+.offers .card img {
+    transition: transform 0.4s;
+}
+
+.offers .card:hover img {
+    transform: scale(1.1);
+}
+
+#menu .row .card {
+    background-color: var(--bg-color);
+    border: none;
+    height: 445px;
+}
+
+#menu .row .card i {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+
+#menu .row .card i::before {
+    position: relative;
+    left: -0.6875rem;
+}
+
+#menu .row .card img {
+    transition: transform 0.4s;
+}
+
+#menu .row .card:hover img {
+    transform: scale(1.1);
+}
+
+#menu .row .card .image {
+    border-bottom-left-radius: 10%;
+    background-color: #F1F2F3;
+    height: 50%;
+}
+
+#about ,.row .item .content{
+    background-color: var(--bg-color);
+}
+
+input {
+    border: 1px solid rgb(95, 94, 94);
+}
+
+.row .item .image {
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+}
+
+.row .item p {
+    font-size: .9375rem;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav button:hover {
+    background-color: transparent !important;
+}
+
+.owl-nav {
+    margin-top: 50px !important;
+}
+
+.owl-nav span {
+    background-color: var(--main-color);
+    padding: 3px 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 35px;
+}
+
+footer , #menu .active {
+    color: white;
+    background-color: var(--bg-color);
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+footer i {
+    font-size: 17px;
+}
+
+footer .icons i {
+    background-color: white;
+    border-radius: 55%;
+    padding: .375rem .0625rem;
+    color: var(--bg-color);
+    transition: all 0.3s;
+}
+
+footer .icons i:hover {
+    color: var(--main-color);
+}
+
+@media screen and (max-width:991px) {
+    #navbarSupportedContent {
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #navbarSupportedContent .fa-solid {
+        color: var(--main-color);
+    }
+
+    #navbarSupportedContent .nav-item a {
+        color: black;
+    }
+
+    #navbarSupportedContent form {
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    #home #carouselExampleCaptions {
+        width: 100% !important;
+    }
+
+    #about{
+        text-align: center;
+    }
+    #navbar form .btn{
+        padding-inline: 15px !important;
+    }
+}
