@@ -39,7 +39,7 @@
 }
 
 .navbar-brand,
-h2,
+h2,h1,
 footer h4 {
     font-family: var(--header);
 }
@@ -115,7 +115,7 @@ form a i:hover {
     background-color: var(--main-color);
 }
 
-.carousel-caption h2 {
+.carousel-caption h1 {
     font-size: 70px;
 }
 
